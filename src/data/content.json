@@ -3,20 +3,20 @@
     "name": "Wilder Nepal",
     "tagline": "Experience Pokhara from the Water",
     "subTagline": "Premium kayaking and stand-up paddleboarding on the serene waters of Fewa Lake.",
-    "whatsappNumber": "9779800000000",
-    "email": "hello@wildernepal.com",
+    "whatsappNumber": "9865388069",
+    "email": "shahdilip.com@gmail.com",
     "location": "Lakeside, Pokhara, Nepal",
     "operatingHours": "Daily 7:00 AM – 6:00 PM",
     "social": {
       "instagram": "https://instagram.com/wildernepal",
-      "facebook": "https://facebook.com/wildernepal"
+      "facebook": "https://www.facebook.com/wildernepal"
     }
   },
   "hero": {
     "headline": "Find Your Wild on Fewa Lake",
     "subheadline": "Guided kayaking and stand-up paddleboarding in the heart of Pokhara. No experience needed — just a sense of adventure.",
     "ctaLabel": "Book Now on WhatsApp",
-    "backgroundImage": "https://images.pexels.com/photos/1430672/pexels-photo-1430672.jpeg?auto=compress&cs=tinysrgb&w=1920"
+    "backgroundImage": "/landing-page.jpg"
   },
   "about": {
     "title": "Born on the Water, Built for Adventurers",
@@ -27,7 +27,7 @@
       { "value": "100%", "label": "Safety Record" },
       { "value": "3+", "label": "Years on the Lake" }
     ],
-    "image": "https://images.pexels.com/photos/1650370/pexels-photo-1650370.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": "/about-image.jpg"
   },
   "testimonials": [
     {
@@ -55,11 +55,11 @@
       "title": "Kayaking on Fewa Lake",
       "shortDescription": "Explore the hidden corners of Fewa Lake at your own pace with our premium single or tandem kayaks.",
       "longDescription": "Our premium kayaking experience gives you the freedom to paddle across the calm waters of Fewa Lake, discover the island temple of Tal Barahi, and absorb the breathtaking reflections of the Annapurna and Machhapuchhre peaks. Perfect for solo adventurers or couples, our certified guides accompany every session to ensure you feel confident and safe on the water from the very first stroke.",
-      "price": "Rs. 1,200 / hour",
+      "price": "NRs. 300 / hour",
       "duration": "1–3 Hours",
       "difficulty": "Beginner-friendly",
       "bestTime": "Early Morning or Late Afternoon",
-      "heroImage": "https://images.pexels.com/photos/1430672/pexels-photo-1430672.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      "heroImage": "/kayak-image.jpg",
       "images": [
         "https://images.pexels.com/photos/1497584/pexels-photo-1497584.jpeg?auto=compress&cs=tinysrgb&w=800",
         "https://images.pexels.com/photos/1430672/pexels-photo-1430672.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -80,11 +80,11 @@
       "title": "Stand Up Paddleboarding (SUP)",
       "shortDescription": "Find your balance and glide over the pristine waters of Fewa Lake with a Himalayan backdrop.",
       "longDescription": "Stand up paddleboarding offers an incredible full-body workout and an unmatched perspective of the Annapurna range above and its perfect reflection below. Our wide, stable boards are ideal for first-timers, while our guides tailor the session to your ability — from a gentle sunrise glide to a more challenging lap of the lake. An experience unique to Pokhara, Nepal.",
-      "price": "Rs. 1,500 / hour",
+      "price": "NRs. 500 / hour",
       "duration": "1–2 Hours",
       "difficulty": "Beginner-friendly",
       "bestTime": "Sunrise or Sunset",
-      "heroImage": "https://images.pexels.com/photos/2123611/pexels-photo-2123611.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      "heroImage": "/sup-image.jpg",
       "images": [
         "https://images.pexels.com/photos/2123611/pexels-photo-2123611.jpeg?auto=compress&cs=tinysrgb&w=800",
         "https://images.pexels.com/photos/1556150/pexels-photo-1556150.jpeg?auto=compress&cs=tinysrgb&w=800",

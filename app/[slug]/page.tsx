@@ -7,7 +7,7 @@ import content from '@/src/data/content.json';
 import type { Metadata } from 'next';
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export function generateStaticParams() {
@@ -15,7 +15,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const service = content.services.find((s) => s.slug === params.slug);
+  const { slug } = await params;
+  const service = content.services.find((s) => s.slug === slug);
   if (!service) return {};
   return {
     title: service.title,
@@ -28,11 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function ServicePage({ params }: Props) {
-  const service = content.services.find((s) => s.slug === params.slug);
+export default async function ServicePage({ params }: Props) {
+  const { slug } = await params;
+  const service = content.services.find((s) => s.slug === slug);
   if (!service) notFound();
 
-  const otherService = content.services.find((s) => s.slug !== params.slug);
+  const otherService = content.services.find((s) => s.slug !== slug);
 
   return (
     <>
@@ -42,6 +44,7 @@ export default function ServicePage({ params }: Props) {
           <Image
             src={service.heroImage}
             alt={service.title}
+            unoptimized={true}
             fill
             priority
             className="object-cover"
@@ -112,6 +115,7 @@ export default function ServicePage({ params }: Props) {
                     <Image
                       src={src}
                       alt={`${service.title} photo ${i + 1}`}
+                      unoptimized={true}
                       fill
                       className="object-cover hover:scale-105 transition-transform duration-500"
                       sizes={i === 0 ? '(max-width: 1024px) 100vw, 66vw' : '(max-width: 768px) 50vw, 33vw'}
@@ -215,6 +219,7 @@ export default function ServicePage({ params }: Props) {
                 <Image
                   src={otherService.heroImage}
                   alt={otherService.title}
+                  unoptimized={true}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 1280px) 100vw, 1280px"

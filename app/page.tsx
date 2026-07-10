@@ -22,6 +22,7 @@ export default function HomePage() {
           <Image
             src={hero.backgroundImage}
             alt="Fewa Lake kayaking Pokhara"
+            unoptimized={true}
             fill
             priority
             className="object-cover"
@@ -116,10 +117,12 @@ export default function HomePage() {
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src={about.image}
-                  alt="Paddling on Fewa Lake"
+                  alt="Fewa Lake kayaking Pokhara"
+                  unoptimized={true}
                   fill
+                  priority
                   className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="100vw"
                 />
               </div>
               <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-xl p-4 border border-border">
@@ -161,20 +164,22 @@ export default function HomePage() {
                   <Image
                     src={service.heroImage}
                     alt={service.title}
+                    unoptimized={true}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-forest-900/70 via-transparent to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-sand-300 mb-1">
-                      {service.duration} &middot; {service.difficulty}
-                    </p>
-                    <h3 className="font-display text-2xl md:text-3xl mb-2">{service.title}</h3>
-                    <p className="text-white/80 text-sm line-clamp-2">{service.shortDescription}</p>
-                  </div>
                 </div>
-                <div className="p-5 flex items-center justify-between">
+                <div className="p-6">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-forest-600 mb-2">
+                    {service.duration} &middot; {service.difficulty}
+                  </p>
+                  <h3 className="font-display text-2xl md:text-3xl text-forest-900 mb-2">{service.title}</h3>
+                  <p className="text-stone-600 text-sm leading-relaxed line-clamp-2">
+                    {service.shortDescription}
+                  </p>
+                </div>
+                <div className="px-6 pb-6 flex items-center justify-between">
                   <p className="text-forest-700 font-semibold">{service.price}</p>
                   <span className="inline-flex items-center gap-1.5 text-sm font-medium text-forest-700 group-hover:gap-2.5 transition-all">
                     View Details <ArrowRight className="w-4 h-4" />
@@ -231,8 +236,9 @@ export default function HomePage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/1650370/pexels-photo-1650370.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/landing-page.jpg"
             alt="Fewa Lake backdrop"
+            unoptimized={true}
             fill
             className="object-cover"
             sizes="100vw"
